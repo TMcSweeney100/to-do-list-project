@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { ToDoWrapper } from './Components/ToDoWrapper';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import  Container  from 'react-bootstrap/Container';
 
 function App() {
   return (
+
+    <Container className='align-items-center justify-content-center background-size: 20px 20px;  background-image: linear-gradient(90deg, black 1px, transparent 0px), linear-gradient(black 1px, transparent 0px'>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <ToDoWrapper/>
     </div>
+    </Container>
   );
 }
 
